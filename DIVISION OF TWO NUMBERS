@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class division_of_two_numbers
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the dividend: ");
+        int a=sc.nextInt();
+        System.out.print("Enter the divisor: ");
+        int b=sc.nextInt();
+        int quotient=0;
+        quotient=a/b;
+        System.out.println("The division of two numbers is: "+quotient);
+    }
+}
