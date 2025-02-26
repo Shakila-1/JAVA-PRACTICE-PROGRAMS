@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class basic_arithmetic_operations
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the first number: ");
+        int num1=sc.nextInt();
+        System.out.print("Enter the second number: ");
+        int num2=sc.nextInt();
+        int sum=0,subtract=0,product=1,quotient=0,remainder=0;
+        sum=num1+num2;
+        subtract=num1-num2;
+        product=num1*num2;
+        quotient=num1/num2;
+        remainder=num1%num2;
+        System.out.println(num1+" + "+num2+" = "+sum);
+        System.out.println(num1+" - "+num2+" = "+subtract);
+        System.out.println(num1+" * "+num2+" = "+product);
+        System.out.println(num1+" / "+num2+" = "+quotient);
+        System.out.println(num1+" % "+num2+" = "+remainder);
+    }
+}
