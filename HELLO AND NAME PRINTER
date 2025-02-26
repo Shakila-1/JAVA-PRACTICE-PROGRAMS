@@ -3,7 +3,9 @@ public class hello_and_name_printer
 {
     public static void main(String args[])
     {
-       System.out.println("HELLO");
-       System.out.println("SHAKILA KHATOON");
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Enter your name: ");
+       String name=sc.next();
+       System.out.println("Hello!! "+name);
     }
 }
