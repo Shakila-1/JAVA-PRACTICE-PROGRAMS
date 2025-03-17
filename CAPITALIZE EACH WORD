@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class capitalize_each_word
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the sentence: ");
+        String s=sc.next();
+        String w="";
+        for(int i=0;i<s.length();i++)
+        {
+            if(i==0)
+            {
+                w=w+s.charAt(i);
+            }
+            else if(s.charAt(i)==' ')
+            {
+                w=w+Character.toUpperCase(s.charAt(i+1));
+            }
+            else
+            {
+                w=w+s.charAt(i);
+            }
+        }
+        System.out.println(w);
+    }
+}
